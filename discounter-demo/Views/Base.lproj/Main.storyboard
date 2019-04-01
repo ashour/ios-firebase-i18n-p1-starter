@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="23B-jZ-0K1">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Medium.ttf">
+            <string>NotoSans-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Feed View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FeedViewController" customModule="discounter_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eHl-Zc-As2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="135.9375"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="oYn-uF-kmI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="23B-jZ-0K1" userLabel="Main Tab Bar Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kpZ-PH-Cg9">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.98039215686274506" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.59999999999999998" green="0.55686274509803924" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zPW-qU-DHt" kind="relationship" relationship="viewControllers" id="uMa-xk-edV"/>
+                        <segue destination="tWQ-Ip-8O4" kind="relationship" relationship="viewControllers" id="0Bd-KA-6Dr"/>
+                        <segue destination="QLB-3i-fPU" kind="relationship" relationship="viewControllers" id="VSQ-3p-340"/>
+                        <segue destination="BN0-ZF-l4J" kind="relationship" relationship="viewControllers" id="aHp-ap-jmQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaX-Tk-Djt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="135.9375"/>
+        </scene>
+        <!--Feed View Navigation Controller-->
+        <scene sceneID="jvi-0f-kt1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zPW-qU-DHt" userLabel="Feed View Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" image="Feed-Inactive" id="lpl-Ac-xnL" customClass="DSCTabBarItem" customModule="discounter_demo" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Feed-Active"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ubd-G4-vPl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lem-YU-kIU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjQ-ym-Bgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="135.9375"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Qtk-oz-gVz">
+            <objects>
+                <viewController id="QLB-3i-fPU" userLabel="Search View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Af-CM-3Gw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7gh-nS-sN1">
+                                <rect key="frame" x="128.5" y="420.5" width="157" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="448-81-bRb">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="33"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="24"/>
+                                        <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder Screen]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vft-4f-Z12">
+                                        <rect key="frame" x="0.0" y="33" width="157" height="22"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7gh-nS-sN1" firstAttribute="centerX" secondItem="1Af-CM-3Gw" secondAttribute="centerX" id="SBI-za-oGR"/>
+                            <constraint firstItem="7gh-nS-sN1" firstAttribute="centerY" secondItem="1Af-CM-3Gw" secondAttribute="centerY" id="ZAI-0C-e4h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5mm-bH-86I"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search-Inactive" id="A2n-hj-gb1" customClass="DSCTabBarItem" customModule="discounter_demo" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Search-Active"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLZ-8b-f0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="936"/>
+        </scene>
+        <!--Alerts View Controller-->
+        <scene sceneID="4e7-V5-g85">
+            <objects>
+                <viewController id="BN0-ZF-l4J" userLabel="Alerts View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dKn-wc-A1m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uw2-jn-dw9">
+                                <rect key="frame" x="128.5" y="420.5" width="157" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-2U-nLi">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="33"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="24"/>
+                                        <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder Screen]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y39-jE-UuB">
+                                        <rect key="frame" x="0.0" y="33" width="157" height="22"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uw2-jn-dw9" firstAttribute="centerX" secondItem="dKn-wc-A1m" secondAttribute="centerX" id="4Cy-Vz-f4r"/>
+                            <constraint firstItem="Uw2-jn-dw9" firstAttribute="centerY" secondItem="dKn-wc-A1m" secondAttribute="centerY" id="vVq-h2-HfL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WZ2-TU-DD3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Alerts" image="Notifications-Inactive" id="Qk2-B5-MIL" customClass="DSCTabBarItem" customModule="discounter_demo" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Notifications-Active"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNb-eC-g3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="935"/>
+        </scene>
+        <!--Flyers View Controller-->
+        <scene sceneID="Uas-A1-5kv">
+            <objects>
+                <viewController id="tWQ-Ip-8O4" userLabel="Flyers View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mJ-bq-Gbi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="78i-Gf-RQG">
+                                <rect key="frame" x="128.5" y="420.5" width="157" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flyers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyY-1e-1a8">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="33"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="24"/>
+                                        <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder Screen]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-V4-6L5">
+                                        <rect key="frame" x="0.0" y="33" width="157" height="22"/>
+                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="78i-Gf-RQG" firstAttribute="centerY" secondItem="0mJ-bq-Gbi" secondAttribute="centerY" id="EDt-9A-duM"/>
+                            <constraint firstItem="78i-Gf-RQG" firstAttribute="centerX" secondItem="0mJ-bq-Gbi" secondAttribute="centerX" id="gCe-mW-Qj7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HOK-Ww-AxR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Flyers" image="Flyer-Inactive" id="nVO-Ol-ynr" customClass="DSCTabBarItem" customModule="discounter_demo" customModuleProvider="target">
+                        <color key="badgeColor" red="0.59999999999999998" green="0.55686274509803924" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Flyer-Active"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1j-QD-tsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="935"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Feed-Active" width="48" height="34"/>
+        <image name="Feed-Inactive" width="48" height="34"/>
+        <image name="Flyer-Active" width="48" height="34"/>
+        <image name="Flyer-Inactive" width="48" height="34"/>
+        <image name="Notifications-Active" width="48" height="34"/>
+        <image name="Notifications-Inactive" width="48" height="34"/>
+        <image name="Search-Active" width="48" height="34"/>
+        <image name="Search-Inactive" width="48" height="34"/>
+    </resources>
+</document>
