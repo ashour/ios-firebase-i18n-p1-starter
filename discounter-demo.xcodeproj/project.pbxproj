@@ -12,6 +12,8 @@
 		117DBDCA2252474B0043FB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDC82252474B0043FB94 /* Main.storyboard */; };
 		117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCB2252474D0043FB94 /* Assets.xcassets */; };
 		117DBDCF2252474D0043FB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCD2252474D0043FB94 /* LaunchScreen.storyboard */; };
+		1191E49622535EEF00FAB74B /* NotoSerifDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1191E49522535EEE00FAB74B /* NotoSerifDisplay-SemiBoldItalic.ttf */; };
+		1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */; };
 		11F0F4A222526FAB0063EEE2 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11F0F4A122526FAB0063EEE2 /* NotoSans-Medium.ttf */; };
 		11F0F4A5225273CA0063EEE2 /* DSCTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F0F4A4225273CA0063EEE2 /* DSCTabBarItem.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 		117DBDCB2252474D0043FB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117DBDCE2252474D0043FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		117DBDD02252474D0043FB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1191E49522535EEE00FAB74B /* NotoSerifDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		11F0F4A122526FAB0063EEE2 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		11F0F4A4225273CA0063EEE2 /* DSCTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCTabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +109,8 @@
 		11F0F4A322526FB20063EEE2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */,
+				1191E49522535EEE00FAB74B /* NotoSerifDisplay-SemiBoldItalic.ttf */,
 				11F0F4A122526FAB0063EEE2 /* NotoSans-Medium.ttf */,
 			);
 			path = Fonts;
@@ -169,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				117DBDCF2252474D0043FB94 /* LaunchScreen.storyboard in Resources */,
-				117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */,
-				11F0F4A222526FAB0063EEE2 /* NotoSans-Medium.ttf in Resources */,
 				117DBDCA2252474B0043FB94 /* Main.storyboard in Resources */,
+				117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */,
+				1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */,
+				11F0F4A222526FAB0063EEE2 /* NotoSans-Medium.ttf in Resources */,
+				1191E49622535EEF00FAB74B /* NotoSerifDisplay-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
