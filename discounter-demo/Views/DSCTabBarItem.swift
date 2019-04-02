@@ -18,8 +18,8 @@ class DSCTabBarItem: UITabBarItem {
     
     fileprivate func setCustomFont() {
         let textAttributes: [NSAttributedString.Key: Any] =
-            [NSAttributedString.Key.font: UIFont(name: "NotoSans-Medium", size: 10)!]
-        
+            [NSAttributedString.Key.font:
+                UIFont(name: "NotoSans-Medium", size: 10)!]
         
         setTitleTextAttributes(textAttributes, for: .normal)
     }

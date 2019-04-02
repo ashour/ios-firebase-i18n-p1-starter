@@ -6,9 +6,11 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NotoSand-Italic.ttf</string>
+		<string>NotoSans-Italic.ttf</string>
 		<string>NotoSans-Medium.ttf</string>
-		<string>NotoSerifDisplay-SemiBoldItalic.ttf</string>
+		<string>NotoSans-Regular.ttf</string>
+		<string>NotoSans-SemiBold.ttf</string>
+		<string>NotoSerif-SemiBoldItalic.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
