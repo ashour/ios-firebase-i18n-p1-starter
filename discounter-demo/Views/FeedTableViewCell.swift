@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FeedTableViewCell: UITableViewCell
 {
@@ -23,6 +24,8 @@ class FeedTableViewCell: UITableViewCell
     
     @IBOutlet weak var priceBeforeDiscountLabel: UILabel!
     
+    @IBOutlet weak var productImageView: UIImageView!
+    
     func updateUI(with product: Product)
     {
         productNameLabel.text = product.name
@@ -37,6 +40,8 @@ class FeedTableViewCell: UITableViewCell
         
         priceBeforeDiscountLabel.attributedText =
             strikeThrough(product.priceBeforeDiscount)
+        
+        productImageView.sd_setImage(with: URL(string: product.imageUrl))
     }
     
 }

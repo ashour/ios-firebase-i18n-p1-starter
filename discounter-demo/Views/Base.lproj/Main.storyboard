@@ -68,16 +68,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7gh-nS-sN1">
-                                <rect key="frame" x="113.66666666666667" y="382.66666666666669" width="147.66666666666663" height="46.666666666666686"/>
+                                <rect key="frame" x="109.33333333333333" y="378.66666666666669" width="156.66666666666669" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="448-81-bRb">
-                                        <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="33"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="24"/>
                                         <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder Screen]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vft-4f-Z12">
-                                        <rect key="frame" x="0.0" y="28" width="147.66666666666666" height="18.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="33" width="156.66666666666666" height="22"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="16"/>
                                         <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -111,16 +111,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uw2-jn-dw9">
-                                <rect key="frame" x="113.66666666666667" y="382.66666666666669" width="147.66666666666663" height="46.666666666666686"/>
+                                <rect key="frame" x="109.33333333333333" y="378.66666666666669" width="156.66666666666669" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-2U-nLi">
-                                        <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="33"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="24"/>
                                         <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder Screen]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y39-jE-UuB">
-                                        <rect key="frame" x="0.0" y="28" width="147.66666666666666" height="18.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="33" width="156.66666666666666" height="22"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="16"/>
                                         <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -154,16 +154,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="78i-Gf-RQG">
-                                <rect key="frame" x="113.66666666666667" y="382.66666666666669" width="147.66666666666663" height="46.666666666666686"/>
+                                <rect key="frame" x="109.33333333333333" y="378.66666666666669" width="156.66666666666669" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flyers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyY-1e-1a8">
-                                        <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="33"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="24"/>
                                         <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Placeholder Screen]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-V4-6L5">
-                                        <rect key="frame" x="0.0" y="28" width="147.66666666666666" height="18.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="33" width="156.66666666666666" height="22"/>
                                         <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="16"/>
                                         <color key="textColor" red="0.2901960784" green="0.34509803919999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -204,13 +204,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discounter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-fi-YYe">
-                                                <rect key="frame" x="15" y="7" width="87.333333333333329" height="21"/>
+                                                <rect key="frame" x="15" y="5.3333333333333375" width="97.666666666666671" height="24.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="NotoSerif-SemiBoldItalic" family="Noto Serif" pointSize="18"/>
                                                 <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-5H-KF9">
-                                                <rect key="frame" x="266" y="10.333333333333336" width="94" height="17"/>
+                                                <rect key="frame" x="261" y="9.3333333333333357" width="99" height="20"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="14"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="4" maxY="0.0"/>
                                                 <state key="normal" title="Sort &amp; Filter" image="Filter-Icon">
@@ -236,7 +236,7 @@
                                                 <fontDescription key="fontDescription" name="NotoSans-Italic" family="Noto Sans" pointSize="13"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Sorted by newest first" image="Expand-More-Icon"/>
+                                                <state key="normal" title="Sorted by first to expire" image="Expand-More-Icon"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.36470588235294116" green="0.33333333333333331" blue="0.29411764705882354" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
@@ -272,13 +272,13 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="345" height="49"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnJ-5K-4Sz">
-                                                                            <rect key="frame" x="15.000000000000007" y="6" width="103.66666666666669" height="18.666666666666668"/>
+                                                                            <rect key="frame" x="15" y="6" width="111" height="22"/>
                                                                             <fontDescription key="fontDescription" name="NotoSerif-Medium" family="Noto Serif" pointSize="16"/>
                                                                             <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7H-gA-2Ui">
-                                                                            <rect key="frame" x="14.999999999999996" y="31" width="58.666666666666657" height="13"/>
+                                                                            <rect key="frame" x="15.000000000000004" y="29" width="61.333333333333343" height="15"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="11"/>
                                                                             <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -305,7 +305,7 @@
                                                                         <constraint firstItem="51q-FU-7Jv" firstAttribute="centerY" secondItem="8vq-vx-36h" secondAttribute="centerY" id="knw-PD-Edc"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nike-shoes" translatesAutoresizingMaskIntoConstraints="NO" id="TAw-sH-wEM">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TAw-sH-wEM">
                                                                     <rect key="frame" x="0.0" y="49" width="345" height="108"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="108" id="oyH-S0-3je"/>
@@ -315,7 +315,7 @@
                                                                     <rect key="frame" x="0.0" y="157" width="345" height="60"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzU-br-lih" customClass="DesignableUILabel" customModule="discounter_demo" customModuleProvider="target">
-                                                                            <rect key="frame" x="10" y="5.0000000000000018" width="83.666666666666671" height="24.666666666666671"/>
+                                                                            <rect key="frame" x="10" y="5" width="69.333333333333329" height="22"/>
                                                                             <color key="backgroundColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                                             <color key="textColor" red="1" green="0.98039215686274506" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
@@ -339,7 +339,7 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$29.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urD-eR-VrO" customClass="DesignableUILabel" customModule="discounter_demo" customModuleProvider="target">
-                                                                            <rect key="frame" x="266" y="5.0000000000000018" width="69" height="24.666666666666671"/>
+                                                                            <rect key="frame" x="284.66666666666669" y="5" width="50.333333333333314" height="22"/>
                                                                             <color key="backgroundColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                                             <color key="textColor" red="1" green="0.98039215690000003" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -363,19 +363,19 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSM-j0-cvk">
-                                                                            <rect key="frame" x="10.000000000000002" y="33.666666666666657" width="30.666666666666671" height="13"/>
+                                                                            <rect key="frame" x="10" y="31" width="32" height="15"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="11"/>
                                                                             <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$35.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-fb-qu2">
-                                                                            <rect key="frame" x="285" y="31.666666666666654" width="40" height="15.333333333333332"/>
+                                                                            <rect key="frame" x="284.33333333333331" y="29" width="40.666666666666686" height="18"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="13"/>
                                                                             <color key="textColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstItem="Ucz-fb-qu2" firstAttribute="top" secondItem="urD-eR-VrO" secondAttribute="bottom" constant="2" id="5vq-wc-gFc"/>
                                                                         <constraint firstItem="HhX-zw-xxk" firstAttribute="trailing" secondItem="urD-eR-VrO" secondAttribute="trailing" constant="10" id="R01-lh-wam"/>
@@ -434,6 +434,7 @@
                                             <outlet property="expiryLabel" destination="nSM-j0-cvk" id="81v-fT-uKx"/>
                                             <outlet property="priceAfterDiscountLabel" destination="urD-eR-VrO" id="OHO-Gl-BCG"/>
                                             <outlet property="priceBeforeDiscountLabel" destination="Ucz-fb-qu2" id="eIj-Q2-gIQ"/>
+                                            <outlet property="productImageView" destination="TAw-sH-wEM" id="ipL-xd-8Ap"/>
                                             <outlet property="productNameLabel" destination="KnJ-5K-4Sz" id="eXi-TS-721"/>
                                             <outlet property="storeNameLabel" destination="c7H-gA-2Ui" id="kI5-T7-3VA"/>
                                         </connections>
@@ -462,6 +463,9 @@
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Feed-Active"/>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="feedTableView" destination="7xg-q2-IHo" id="imB-pM-QJt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjd-4H-QRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -480,6 +484,5 @@
         <image name="Notifications-Inactive" width="48" height="34"/>
         <image name="Search-Active" width="48" height="34"/>
         <image name="Search-Inactive" width="48" height="34"/>
-        <image name="nike-shoes" width="5973" height="3361"/>
     </resources>
 </document>

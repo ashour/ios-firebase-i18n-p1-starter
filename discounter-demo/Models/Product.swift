@@ -6,8 +6,12 @@
 //  Copyright © 2019 Mohammad Ashour. All rights reserved.
 //
 
+import Firebase
+
 class Product
 {
+    fileprivate static let COLLECTION = "product-feed"
+    
     var name: String
     
     var store: String
@@ -20,12 +24,69 @@ class Product
     
     var expires: String
     
-    init(               name: String,
-                       store: String,
-                    discount: String,
-          priceAfterDiscount: String,
-         priceBeforeDiscount: String,
-                     expires: String)
+    var imageUrl: String
+    
+    static func fromDB(document: [String: Any]) -> Product
+    {
+        return Product(
+            name: DB.convert(document, "name") ?? "",
+            
+            store: DB.convert(document, "store") ?? "",
+            
+            discount: DB.convert(document, "discount") ?? "",
+            
+            priceAfterDiscount: centsToString(
+                DB.convert(document, "priceAfterDiscountInCents") ?? 0),
+            
+            priceBeforeDiscount: centsToString(
+                DB.convert(document, "priceBeforeDiscountInCents") ?? 0),
+            
+            expires: humanizeDate(date: DB.timestampToDate(document, "expires")),
+            
+            imageUrl: DB.convert(document, "imageUrl") ?? ""
+        )
+    }
+    
+    static func fetchFeed(
+        onSuccess: @escaping ((_ products: [Product]) -> Void))
+    {
+        collection.order(by: "expires").getDocuments()
+        {
+            (querySnapshot, err) in
+            
+            if let err = err
+            {
+                print("Error getting documents: \(err)")
+            }
+            else
+            {
+                var products: [Product] = []
+                
+                for document in querySnapshot!.documents
+                {
+                    products.append(Product.fromDB(document: document.data()))
+                }
+                
+                onSuccess(products)
+            }
+        }
+    }
+    
+    fileprivate static var collection: CollectionReference
+    {
+        get
+        {
+            return DB.instance.collection(COLLECTION)
+        }
+    }
+    
+    init(              name: String,
+                      store: String,
+                   discount: String,
+         priceAfterDiscount: String,
+        priceBeforeDiscount: String,
+                    expires: String,
+                   imageUrl: String)
     {
         self.name = name
         
@@ -38,12 +99,7 @@ class Product
         self.priceBeforeDiscount = priceBeforeDiscount
         
         self.expires = expires
+        
+        self.imageUrl = imageUrl
     }
 }
-
-
-var products = [
-    Product(name: "Nike Air Jordans", store: "Nike Store Downtown", discount: "20% off", priceAfterDiscount: "$199.99", priceBeforeDiscount: "$249.99", expires: "Tuesday"),
-    
-    Product(name: "PlayStation 4", store: "EG Games", discount: "15% off", priceAfterDiscount: "$2,249.99", priceBeforeDiscount: "$4,234.00", expires: "17 March")
-]

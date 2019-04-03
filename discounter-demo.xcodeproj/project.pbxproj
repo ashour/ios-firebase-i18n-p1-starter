@@ -18,6 +18,9 @@
 		117DBDCF2252474D0043FB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCD2252474D0043FB94 /* LaunchScreen.storyboard */; };
 		1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */; };
 		119A3BCD2254B0E00040163C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 119A3BCC2254B0E00040163C /* GoogleService-Info.plist */; };
+		119A3BD12254B8BD0040163C /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A3BD02254B8BD0040163C /* DB.swift */; };
+		119A3BD32254C8740040163C /* CentsToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A3BD22254C8740040163C /* CentsToString.swift */; };
+		119A3BD52254D6E70040163C /* HumanDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A3BD42254D6E70040163C /* HumanDate.swift */; };
 		11CBFC7E2253C71C0001DDB1 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBFC7D2253C71C0001DDB1 /* NotoSans-Regular.ttf */; };
 		11CBFC802253C72B0001DDB1 /* NotoSerif-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBFC7F2253C72B0001DDB1 /* NotoSerif-Medium.ttf */; };
 		11CBFC822253C7640001DDB1 /* NotoSerif-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBFC812253C7640001DDB1 /* NotoSerif-SemiBoldItalic.ttf */; };
@@ -42,6 +45,9 @@
 		117DBDD02252474D0043FB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		119A3BCC2254B0E00040163C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		119A3BD02254B8BD0040163C /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		119A3BD22254C8740040163C /* CentsToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentsToString.swift; sourceTree = "<group>"; };
+		119A3BD42254D6E70040163C /* HumanDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDate.swift; sourceTree = "<group>"; };
 		11CBFC7D2253C71C0001DDB1 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		11CBFC7F2253C72B0001DDB1 /* NotoSerif-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Medium.ttf"; sourceTree = "<group>"; };
 		11CBFC812253C7640001DDB1 /* NotoSerif-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				114760742253E34C005DAAE1 /* StringUtil.swift */,
+				119A3BD22254C8740040163C /* CentsToString.swift */,
+				119A3BD42254D6E70040163C /* HumanDate.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 				117DBDD6225247B70043FB94 /* Models */,
 				117DBDD8225247C90043FB94 /* Controllers */,
 				117DBDD7225247C20043FB94 /* Views */,
+				119A3BCE2254B89B0040163C /* Services */,
 				114760732253E32B005DAAE1 /* Util */,
 				11F0F4A022526F770063EEE2 /* Resources */,
 				117DBDC42252474B0043FB94 /* AppDelegate.swift */,
@@ -134,6 +143,22 @@
 				117DBDC62252474B0043FB94 /* FeedViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		119A3BCE2254B89B0040163C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				119A3BCF2254B8A60040163C /* RemoteDB */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		119A3BCF2254B8A60040163C /* RemoteDB */ = {
+			isa = PBXGroup;
+			children = (
+				119A3BD02254B8BD0040163C /* DB.swift */,
+			);
+			path = RemoteDB;
 			sourceTree = "<group>";
 		};
 		11F0F4A022526F770063EEE2 /* Resources */ = {
@@ -276,12 +301,30 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-discounter-demo/Pods-discounter-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,9 +342,12 @@
 				114760752253E34C005DAAE1 /* StringUtil.swift in Sources */,
 				11CBFC862253CCA90001DDB1 /* FeedTableViewCell.swift in Sources */,
 				11F0F4A5225273CA0063EEE2 /* DSCTabBarItem.swift in Sources */,
+				119A3BD52254D6E70040163C /* HumanDate.swift in Sources */,
 				11CBFC842253CB540001DDB1 /* Product.swift in Sources */,
+				119A3BD12254B8BD0040163C /* DB.swift in Sources */,
 				117DBDC72252474B0043FB94 /* FeedViewController.swift in Sources */,
 				117DBDC52252474B0043FB94 /* AppDelegate.swift in Sources */,
+				119A3BD32254C8740040163C /* CentsToString.swift in Sources */,
 				114760702253DDEB005DAAE1 /* UIView+.swift in Sources */,
 				1147606E2253D783005DAAE1 /* DesignableUILabel.swift in Sources */,
 			);

@@ -13,6 +13,26 @@ class FeedViewController:
     UITableViewDelegate,
     UITableViewDataSource
 {
+    
+    @IBOutlet weak var feedTableView: UITableView!
+    
+    fileprivate var products: [Product] = []
+    {
+        didSet
+        {
+            feedTableView.reloadData()
+        }
+    }
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        Product.fetchFeed() { self.products = $0 }
+    }
+    
+    // MARK: TableView
+    
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int)
         -> Int
