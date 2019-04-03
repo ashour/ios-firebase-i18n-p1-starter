@@ -43,5 +43,4 @@ class FeedTableViewCell: UITableViewCell
         
         productImageView.sd_setImage(with: URL(string: product.imageUrl))
     }
-    
 }
