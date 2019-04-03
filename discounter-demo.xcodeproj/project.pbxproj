@@ -17,6 +17,7 @@
 		117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCB2252474D0043FB94 /* Assets.xcassets */; };
 		117DBDCF2252474D0043FB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCD2252474D0043FB94 /* LaunchScreen.storyboard */; };
 		1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */; };
+		119A3BCD2254B0E00040163C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 119A3BCC2254B0E00040163C /* GoogleService-Info.plist */; };
 		11CBFC7E2253C71C0001DDB1 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBFC7D2253C71C0001DDB1 /* NotoSans-Regular.ttf */; };
 		11CBFC802253C72B0001DDB1 /* NotoSerif-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBFC7F2253C72B0001DDB1 /* NotoSerif-Medium.ttf */; };
 		11CBFC822253C7640001DDB1 /* NotoSerif-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBFC812253C7640001DDB1 /* NotoSerif-SemiBoldItalic.ttf */; };
@@ -24,6 +25,7 @@
 		11CBFC862253CCA90001DDB1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBFC852253CCA90001DDB1 /* FeedTableViewCell.swift */; };
 		11F0F4A222526FAB0063EEE2 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11F0F4A122526FAB0063EEE2 /* NotoSans-Medium.ttf */; };
 		11F0F4A5225273CA0063EEE2 /* DSCTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F0F4A4225273CA0063EEE2 /* DSCTabBarItem.swift */; };
+		137325596CD7B762DBC576C7 /* Pods_discounter_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D4954351133A580EC4BD45 /* Pods_discounter_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		117DBDCE2252474D0043FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		117DBDD02252474D0043FB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		119A3BCC2254B0E00040163C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11CBFC7D2253C71C0001DDB1 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		11CBFC7F2253C72B0001DDB1 /* NotoSerif-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Medium.ttf"; sourceTree = "<group>"; };
 		11CBFC812253C7640001DDB1 /* NotoSerif-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -46,6 +49,9 @@
 		11CBFC852253CCA90001DDB1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		11F0F4A122526FAB0063EEE2 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		11F0F4A4225273CA0063EEE2 /* DSCTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCTabBarItem.swift; sourceTree = "<group>"; };
+		56D4954351133A580EC4BD45 /* Pods_discounter_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_discounter_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCB30E8FC35961EC26B5721 /* Pods-discounter-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-discounter-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-discounter-demo/Pods-discounter-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		E4053E64555D691BE5C633EB /* Pods-discounter-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-discounter-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-discounter-demo/Pods-discounter-demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137325596CD7B762DBC576C7 /* Pods_discounter_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,8 @@
 			children = (
 				117DBDC32252474B0043FB94 /* discounter-demo */,
 				117DBDC22252474B0043FB94 /* Products */,
+				62CA942E37E49F831B283624 /* Pods */,
+				5622DA99B735FF40ADBF9D2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +102,7 @@
 				11F0F4A022526F770063EEE2 /* Resources */,
 				117DBDC42252474B0043FB94 /* AppDelegate.swift */,
 				117DBDD02252474D0043FB94 /* Info.plist */,
+				119A3BCC2254B0E00040163C /* GoogleService-Info.plist */,
 			);
 			path = "discounter-demo";
 			sourceTree = "<group>";
@@ -148,6 +158,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		5622DA99B735FF40ADBF9D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56D4954351133A580EC4BD45 /* Pods_discounter_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62CA942E37E49F831B283624 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB30E8FC35961EC26B5721 /* Pods-discounter-demo.debug.xcconfig */,
+				E4053E64555D691BE5C633EB /* Pods-discounter-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 117DBDD32252474D0043FB94 /* Build configuration list for PBXNativeTarget "discounter-demo" */;
 			buildPhases = (
+				471D77F7EA70A07955003A92 /* [CP] Check Pods Manifest.lock */,
 				117DBDBD2252474B0043FB94 /* Sources */,
 				117DBDBE2252474B0043FB94 /* Frameworks */,
 				117DBDBF2252474B0043FB94 /* Resources */,
+				CFD850E3CF1A124E6FE4879F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,12 +242,54 @@
 				117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */,
 				1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */,
 				11F0F4A222526FAB0063EEE2 /* NotoSans-Medium.ttf in Resources */,
+				119A3BCD2254B0E00040163C /* GoogleService-Info.plist in Resources */,
 				11CBFC7E2253C71C0001DDB1 /* NotoSans-Regular.ttf in Resources */,
 				11CBFC802253C72B0001DDB1 /* NotoSerif-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		471D77F7EA70A07955003A92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-discounter-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD850E3CF1A124E6FE4879F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-discounter-demo/Pods-discounter-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-discounter-demo/Pods-discounter-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		117DBDBD2252474B0043FB94 /* Sources */ = {
@@ -376,6 +447,7 @@
 		};
 		117DBDD42252474D0043FB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCB30E8FC35961EC26B5721 /* Pods-discounter-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.ashour.discounter-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.ashour.ios-i18n";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,6 +466,7 @@
 		};
 		117DBDD52252474D0043FB94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4053E64555D691BE5C633EB /* Pods-discounter-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,7 +476,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.ashour.discounter-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.ashour.ios-i18n";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
