@@ -8,6 +8,7 @@ target 'discounter-demo' do
   # Pods for discounter-demo
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/RemoteConfig'
 
   pod 'SDWebImage'
 end

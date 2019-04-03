@@ -16,6 +16,8 @@ class FeedViewController:
     
     @IBOutlet weak var feedTableView: UITableView!
     
+    var productListener: Product.Listener?
+    
     fileprivate var products: [Product] = []
     {
         didSet
@@ -24,11 +26,21 @@ class FeedViewController:
         }
     }
     
-    override func viewDidLoad()
+    override func viewWillAppear(_ animated: Bool)
     {
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
         
-        Product.fetchFeed() { self.products = $0 }
+        productListener = Product.listenToFeed
+        {
+            [unowned self] in self.products = $0
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        
+        productListener?.remove()
     }
     
     // MARK: TableView
@@ -42,13 +54,12 @@ class FeedViewController:
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath)
-        -> UITableViewCell {
+        -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CELL") as!
                     FeedTableViewCell
             
-        let product = products[indexPath.row]
-            
-        cell.updateUI(with: product)
+        cell.updateUI(with: products[indexPath.row])
             
         return cell
     }

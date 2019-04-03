@@ -10,65 +10,56 @@ import Firebase
 
 class Product
 {
-    fileprivate static let COLLECTION = "product-feed"
+    typealias OnProductsFetched = (_ products: [Product]) -> Void
     
-    var name: String
+    typealias Listener = ListenerRegistration
     
-    var store: String
+                   var name: String
     
-    var discount: String
+                  var store: String
     
-    var priceAfterDiscount: String
+               var discount: String
+    
+     var priceAfterDiscount: String
     
     var priceBeforeDiscount: String
     
-    var expires: String
+                var expires: String
     
-    var imageUrl: String
+               var imageUrl: String
     
-    static func fromDB(document: [String: Any]) -> Product
+    static func fetchFeed(onSuccess: @escaping OnProductsFetched)
     {
-        return Product(
-            name: DB.convert(document, "name") ?? "",
+        baseQuery().getDocuments
+        {
+            (querySnapshot, error) in
             
-            store: DB.convert(document, "store") ?? "",
+            if let error = error
+            {
+                print("Error getting documents: \(error)")
+                
+                return
+            }
             
-            discount: DB.convert(document, "discount") ?? "",
-            
-            priceAfterDiscount: centsToString(
-                DB.convert(document, "priceAfterDiscountInCents") ?? 0),
-            
-            priceBeforeDiscount: centsToString(
-                DB.convert(document, "priceBeforeDiscountInCents") ?? 0),
-            
-            expires: humanizeDate(date: DB.timestampToDate(document, "expires")),
-            
-            imageUrl: DB.convert(document, "imageUrl") ?? ""
-        )
+            onSuccess(fromDB(documents: querySnapshot!.documents))
+        }
     }
     
-    static func fetchFeed(
-        onSuccess: @escaping ((_ products: [Product]) -> Void))
+    static func listenToFeed(onChange: @escaping OnProductsFetched)
+        -> ListenerRegistration
     {
-        collection.order(by: "expires").getDocuments()
+        return baseQuery().addSnapshotListener
         {
-            (querySnapshot, err) in
-            
-            if let err = err
+            (querySnapshot, error) in
+
+            guard let documents = querySnapshot?.documents else
             {
-                print("Error getting documents: \(err)")
+                print("Error fetching documents: \(error!)")
+
+                return
             }
-            else
-            {
-                var products: [Product] = []
-                
-                for document in querySnapshot!.documents
-                {
-                    products.append(Product.fromDB(document: document.data()))
-                }
-                
-                onSuccess(products)
-            }
+
+            onChange(fromDB(documents: documents))
         }
     }
     
@@ -76,8 +67,39 @@ class Product
     {
         get
         {
-            return DB.instance.collection(COLLECTION)
+            return DB.instance.collection("product-feed")
         }
+    }
+   
+    fileprivate static func baseQuery() -> Query {
+        return collection.order(by: "expires")
+    }
+    
+    fileprivate static func fromDB(documents: [QueryDocumentSnapshot])
+        -> [Product]
+    {
+        return documents.map { fromDB(data: $0.data()) }
+    }
+    
+    fileprivate static func fromDB(data: [String: Any]) -> Product
+    {
+        return Product(
+            name: DB.convert(data, "name") ?? "",
+            
+            store: DB.convert(data, "store") ?? "",
+            
+            discount: DB.convert(data, "discount") ?? "",
+            
+            priceAfterDiscount: centsToString(
+                DB.convert(data, "priceAfterDiscountInCents") ?? 0),
+            
+            priceBeforeDiscount: centsToString(
+                DB.convert(data, "priceBeforeDiscountInCents") ?? 0),
+            
+            expires: humanizeDate(date: DB.timestampToDate(data, "expires")),
+            
+            imageUrl: DB.convert(data, "imageUrl") ?? ""
+        )
     }
     
     init(              name: String,
