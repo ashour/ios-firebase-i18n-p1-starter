@@ -16,7 +16,6 @@
 		117DBDCA2252474B0043FB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDC82252474B0043FB94 /* Main.storyboard */; };
 		117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCB2252474D0043FB94 /* Assets.xcassets */; };
 		117DBDCF2252474D0043FB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117DBDCD2252474D0043FB94 /* LaunchScreen.storyboard */; };
-		1187E87F2255105100B28715 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1187E87E2255105100B28715 /* GoogleService-Info.plist */; };
 		1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */; };
 		119A3BD12254B8BD0040163C /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A3BD02254B8BD0040163C /* DB.swift */; };
 		119A3BD32254C8740040163C /* CentsToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A3BD22254C8740040163C /* CentsToString.swift */; };
@@ -43,7 +42,6 @@
 		117DBDCB2252474D0043FB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117DBDCE2252474D0043FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		117DBDD02252474D0043FB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1187E87E2255105100B28715 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1187E880225515B600B28715 /* discounter-demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "discounter-demo.entitlements"; sourceTree = "<group>"; };
 		1191E4972253842A00FAB74B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		119A3BD02254B8BD0040163C /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				11F0F4A022526F770063EEE2 /* Resources */,
 				117DBDC42252474B0043FB94 /* AppDelegate.swift */,
 				117DBDD02252474D0043FB94 /* Info.plist */,
-				1187E87E2255105100B28715 /* GoogleService-Info.plist */,
 			);
 			path = "discounter-demo";
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 				117DBDCC2252474D0043FB94 /* Assets.xcassets in Resources */,
 				1191E4982253842A00FAB74B /* NotoSans-Italic.ttf in Resources */,
 				11F0F4A222526FAB0063EEE2 /* NotoSans-Medium.ttf in Resources */,
-				1187E87F2255105100B28715 /* GoogleService-Info.plist in Resources */,
 				11CBFC7E2253C71C0001DDB1 /* NotoSans-Regular.ttf in Resources */,
 				11CBFC802253C72B0001DDB1 /* NotoSerif-Medium.ttf in Resources */,
 			);
@@ -514,7 +510,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.ashour.iosi18n;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.ashour.iosi18ncomplete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,7 +530,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.ashour.iosi18n;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.ashour.iosi18ncomplete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
