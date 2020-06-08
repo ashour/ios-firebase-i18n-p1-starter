@@ -1,3 +1,7 @@
+**⚠️ This repo is no longer maintained! Please visit https://github.com/PhraseApp-Blog/ios-firebase-i18n-p1-starter for the up-to-date repo.**
+
+---
+
 # Discounter (Demo)
 Starter Project for iOS/Firebase PhraseApp Blog Article - Part 2
 
